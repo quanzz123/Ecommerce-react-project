@@ -10,13 +10,14 @@ import { Route, Routes } from 'react-router-dom'
 import NavBar from './components/NavBar'
 import AuthProvider from './context/AuthContext'
 import ProductDetail from './pages/ProductDetail'
+import CartProvider from './context/CartContext'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <AuthProvider>
-
+      <CartProvider>
       <div className="app">
         <NavBar />
         <Routes >
@@ -26,6 +27,7 @@ function App() {
           <Route path="/product/:id" element={<ProductDetail />} />
         </Routes>
       </div>
+      </CartProvider>
     </AuthProvider>
   )
 }
