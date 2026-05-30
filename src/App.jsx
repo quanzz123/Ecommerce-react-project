@@ -9,6 +9,7 @@ import Checkout from './pages/Checkout'
 import { Route, Routes } from 'react-router-dom'
 import NavBar from './components/NavBar'
 import AuthProvider from './context/AuthContext'
+import ProductDetail from './pages/ProductDetail'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/auth" element={<Auth />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
         </Routes>
       </div>
     </AuthProvider>
