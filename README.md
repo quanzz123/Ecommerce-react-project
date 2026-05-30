@@ -2,6 +2,12 @@
 
 ShopHub is a state-of-the-art client-side e-commerce web application built on **React 19** and **Vite 8**. The application features user authentication with local session persistence, a responsive product grid, a highly interactive product customization detail view, and custom-designed micro-animations.
 
+## 📸 Screenshots
+
+| Home Page | Product Detail Page |
+| :---: | :---: |
+| ![ShopHub Home Screen](./src/assets/home.png) | ![ShopHub Product Detail Page](./src/assets/detail.png) |
+
 ---
 
 ## 🌟 Core Features
